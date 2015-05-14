@@ -1,2 +1,2 @@
 # AdventureBreakerGodot
-Adventure Breaker port for the Godot game engine.  Also switched to 2D
+Godot game engine port for 2D edition of my AdventureBreaker game.
