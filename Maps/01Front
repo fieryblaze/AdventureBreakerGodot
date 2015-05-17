@@ -1,0 +1,10 @@
+Exit,			Lava,			SpeedUpItem,	Normal,			Sticky,			Multiball,		Sticky,			Sticky,			Sticky,			Sticky
+Lava,			Lava,			Multiball,		Normal,			Indestructible,	Normal,			Indestructible,	Multiball,		Normal,			Sticky
+Exploding,		Normal			Normal,			Indestructible,	Indestructible,	Normal,			Indestructible,	Multiball,		LargePaddleItem,Normal
+0,				Normal,			Normal,			Indestructible,	Indestructible,	Normal,			Indestructible,	Multiball,		Normal,			Normal
+0,				0,				Normal,			Indestructible,	Indestructible,	Normal,			Lava,			Lava,			Lava,			Lava
+Lava,			Indestructible,	SlowMoItem,		Indestructible,	Indestructible,	Normal,			Indestructible,	Indestructible,	Indestructible,	Sticky
+Normal,			Indestructible,	LargePaddleItem,Indestructible,	Indestructible,	Normal			Indestructible,	Indestructible,	Indestructible,	Normal
+Lava,			Indestructible,	Normal			Sticky,			Indestructible,	Multiball,		Normal,			Normal,			Normal,			Normal
+Normal,			Normal,			Normal,			Normal,			Normal,			Normal,			Normal,			Normal,			Normal,			Normal
+Indestructible,	Indestructible,	Indestructible,	Unflippable,	Indestructible,	SmallPaddleItem,Multiball,		Normal,			Indestructible,	Indestructible
