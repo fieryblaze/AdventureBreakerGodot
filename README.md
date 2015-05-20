@@ -72,7 +72,7 @@ which will show up in game as:
 
 The entire play area is 10x40 blocks, which can be seen filled in with '0' in the file **FullMap** in the **Maps/** folder.
 
-*See the file _1Front_ in _Maps/1/_ folder for an example of a mapping using block names*  
+*See the file **1Front** in **Maps/1/** folder for an example of a mapping using block names*  
 
 ### Special Note:
 If either the front or back block of a pair is an 'Unflippable' block, then
