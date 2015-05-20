@@ -7,11 +7,20 @@ var map = [[]]
 # var a=2
 # var b="textvar"
 var IndestructibleBlock = preload("res://Scenes/Blocks/IndestructibleBlock.scn")
+var BoundaryScene = preload("res://Scenes/game_boundary.scn")
+var PaddleScene = preload("res://Scenes/paddle.scn")
+
+var Boundary
+var Paddle
 
 var sizeX = 77
 var sizeY = 27
 
 func _ready():
+	Boundary = BoundaryScene.instance()
+	Paddle = PaddleScene.instance()
+	self.add_child(Boundary)
+	self.add_child(Paddle)
 	while(map.size() < 10):
 		map.append([])
 	for i in range(10):
