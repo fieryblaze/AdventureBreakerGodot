@@ -1,0 +1,78 @@
+CCC = CapitalCamelCase
+cC = camelCase
+c_C = camel_Case
+C_C_C = Capital_Camel_Case
+CAPS = CAP_LOCK
+
+
+Folder Names: CCC
+
+Scripts: CCC .gd same name as node attached to
+
+Member Variables: cC
+
+Member Functions: CCC
+
+Constants: CAPS
+
+Nodes: CCC contains description of node type ex->BrickStaticBody
+
+Scenes: C_C_C
+
+All other file names: C_C_C
+
+
+*** Referencing other scenes or nodes ***
+
+Instance should be a descriptive name, which can be the same name as the object
+being instanced.
+Loaded or preloaded reference should have 'Ref' at the end. ex: paddleRef
+
+
+*** Commenting ***
+
+Comments explaining the next block of code should be preceded and followed by a
+double hash, with a space buffer. When multiple lines are needed, the middle
+lines should follow a single hash with a space buffer, and line up with the
+lines above.
+
+## This is a single line explanation comment. ##
+
+## This is a		   ##
+ # multi-line
+## explanation comment ##
+
+Inline comments, comments for empty code blocks, or unimplemented code comments,
+should just be one hash with no space buffer. Inline comments should never be
+used to explain a piece of code, only for known bugs, current workarounds, and
+unimplemented code.
+
+This is an #inline comment
+#this is code that needs to be filled in
+
+Any large functions or code blocks should have a hash followed by 'END', then a
+space, then a repeat of the first line of the block (colons not included). This
+should be lined up with the first line of the code block.
+
+#END SomeLargeFunction()
+
+All comments should line up with the code block that contains them
+
+*Correct*
+func Blah():
+	## Check if ready to print, and then print 'blah' ##
+	if print:
+		#print blah here
+		pass
+	#END if print
+#END Blah()
+
+*Incorrect*
+func Blah():
+## Check if ready to print, and then print 'blah' ##
+	if print:
+#print blah here
+		pass
+#END if print
+	#END Blah()
+

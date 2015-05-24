@@ -1,5 +1,5 @@
 
-var thisBrick = preload("res://Scripts/Brick.gd")
+var thisBrick # = preload("res://Scripts/Brick.gd")
 
 var health
 var isDestructible

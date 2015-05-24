@@ -5,6 +5,15 @@ var backBlock = preload("res://Scripts/Blocks/Block.gd")
 var isFront = true
 var surroundingBricks = []
 
+var sprite = load("res://Sprites/LavaBlock.png")
+
+var frontSprite
+var backSprite
+
+func _ready():
+	backSprite = self.get_node("BackBlockSprite")
+	frontSprite = self.get_node("FrontBlockSprite")
+
 func SetOtherBrick(brick, direction):
 	surroundingBricks[direction] = brick
 		
@@ -14,13 +23,23 @@ func GetOtherBrick(direction):
 func CreateBlocks(frontBlock, backBlock):
 	self.frontBlock = frontBlock
 	self.backBlock = backBlock
+	backSprite.set_texture(self.frontBlock.Get_Sprite())
+	frontSprite.set_texture(self.frontBlock.Get_Sprite())
 	#set sprites and sizes
 	
 func Flip():
 	if(frontBlock.GetFlippable() && backBlock.GetFlippable()):
 		isFront = !isFront
 		
-#func Rotate()
+func Rotate():
+	if frontBlock.GetFlippable() and backBlock.GetFlippable():
+		if isFront:
+			#flip to back
+			pass
+		else:
+			#flip to front
+			pass
+		isFront = !isFront
 
 func UnstickBalls():
 	frontBlock.UnstickBalls()
